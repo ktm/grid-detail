@@ -5,6 +5,8 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { GridComponent } from './grid/grid.component';
 import { DetailComponent } from './grid/detail/detail.component';
+import { AppRoutingModule } from './app-routing.module';
+import {GridModule} from '@progress/kendo-angular-grid';
 
 
 @NgModule({
@@ -14,7 +16,9 @@ import { DetailComponent } from './grid/detail/detail.component';
     DetailComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule,
+    GridModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
