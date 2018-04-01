@@ -1,0 +1,142 @@
+// remove the inline stuff you have for the grid
+// and place kendo overrides in here
+
+.kgrid {
+}
+
+.k-window-title {
+  padding: 24px 0 20px 30px;
+}
+
+.k-window-titlebar {
+  padding: 0 !important;
+  border-color: white;
+}
+
+.k-icon {
+  font-size: 18px;
+}
+
+.k-textbox-container {
+  width: 404px !important;
+  margin-right: 50px;
+}
+
+.k-tabstrip > .k-content {
+  padding: 0 !important;
+}
+
+#kbtnprimary {
+  max-width: 165px;
+
+}
+
+#kprimary {
+  background-color: #78c247 !important;
+  max-width: 165px !important;
+  color: white;
+}
+
+.k-tabstrip > .k-tabstrip-items .k-item.k-state-active {
+  color: #495057;
+  border-color: #06409e #dee2e6 #f6f6f6;
+  border-width: 5px 1px 1px;
+  width: 146px;
+  height: 52px;
+  background-color: #f6f6f6;
+}
+
+.k-tabstrip > .k-tabstrip-items .k-item .k-link {
+  padding: 0 !important;
+}
+
+.k-link {
+  margin-left: 29px;
+  margin-top: 9px;
+  font-size: 17px !important;
+  color: #06409e !important;
+  background-color: #f6f6f6;
+  font-weight: bold;
+}
+
+.k-tabstrip > .k-content.k-state-active {
+  display: block;
+  background-color: #f6f6f6;
+}
+
+.k-window-content, .k-prompt-container {
+  padding: 0px !important;
+}
+
+.k-widget, .k-block {
+  border-color: rgba(33, 37, 41, 0) !important;
+}
+
+.k-textbox-container > .k-textbox, .k-textbox-container > .k-widget, .k-textbox-container > .k-block {
+  width: 404px !important;
+  height: 60px !important;
+}
+
+.k-dialog {
+  padding: 0;
+  position: fixed;
+  box-sizing: border-box;
+  width: 90% !important;
+  height: 75% !important;
+}
+
+.k-dialog-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  //  height: 100% !important;
+  z-index: 10001;
+  //padding: 30px 25px;
+}
+
+// Cancel and Save space betweeb
+.k-dialog-buttongroup {
+  display: flex;
+  justify-content: space-between;
+}
+
+.k-checkbox:indeterminate + .k-checkbox-label::after {
+  border-color: #fe6158 !important;
+  background-color: #fe6158 !important;
+}
+
+.k-checkbox:focus + .k-checkbox-label::before {
+  box-shadow: 0 0 0 1px #fff, 0 0 0 3px transparent !important;
+}
+
+.k-textbox-container > .k-textbox, .k-textbox-container > .k-widget, .k-textbox-container > .k-block {
+
+  color: #52545e;
+  font-size: 20px;
+}
+
+.k-window-actions {
+  margin-top: -28px !important;
+  margin-bottom: -1rem !important;
+  margin-right: 12px !important;
+}
+
+.k-state-selected {
+  color: #ffffff;
+  background-color: transparent;
+  border-color: none;
+}

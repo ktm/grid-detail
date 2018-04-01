@@ -1,22 +1,22 @@
-<div class="products">
-  <div class="products_heading">
-    <div class="products_heading--header">Products
-    </div>
-    <div class="products_heading--search">
-      <div class="inner-addon right-addon products_heading--search-box">
+<div class="grid_view">
+  <div class="grid_view_heading">
+    <div class="grid_view_heading--label">Items</div>
+    <div class="grid_view_heading--search">
+      <div class="inner-addon right-addon grid_view_heading--search-box">
         <i class="glyphicon glyphicon-search"></i>
-        <input type="text" id="txtSearchString" class="k-textbox form-control" placeholder="Search" (input)="onProductIdSearch($event)">
+
+        <i class="far fa-search-alt"></i>
+
+        <input type="text" id="txtSearchString" class="form-control" placeholder="Search" (input)="onItemIdSearch($event)">
       </div>
-      <div class="products_heading--addProduct">
-        <a class="products_heading--addProduct-icon" (click)="addHandler()">
-          <img src="../assets/images/SVG/add_product_btn.svg">
-        </a>
+      <div class="grid_view_heading--addItem">
+        <button>Add Thing</button>
       </div>
     </div>
   </div>
 
 
-  <div class="products_grid">
+  <div class="grid_view_grid">
     <kendo-grid id="grid" class="kgrid" [data]="gridData" [selectable]="true" (cellClick)="editClick($event)" [height]="750">
       <kendo-grid-checkbox-column showSelectAll="true " width="68" [headerStyle]="{ 'text-align': 'center', 'vertical-align': 'middle'} "
                                   [style]="{ 'text-align': 'center', 'vertical-align': 'middle'} ">
@@ -28,7 +28,7 @@
       <kendo-grid-column field="productId" title="ID " width="127" [headerStyle]="{ 'font-size': '14px', 'color': '#131313', 'height': '52px', 'text-transform': 'uppercase', 'text-align': 'center', 'vertical-align':
             'middle'} " [style]="{ 'color': '#52545e', 'height': '50px', 'vertical-align': 'middle', 'font-size':'16px', 'padding-left':'18px'} ">
       </kendo-grid-column>
-      <kendo-grid-column field="productName" title="Name " width="390" [headerStyle]="{ 'font-size': '14px', 'color': '#131313', 'height': '52px', 'text-transform': 'uppercase', 'text-align': 'center', 'vertical-align':
+      <kendo-grid-column field="ItemName" title="Name " width="390" [headerStyle]="{ 'font-size': '14px', 'color': '#131313', 'height': '52px', 'text-transform': 'uppercase', 'text-align': 'center', 'vertical-align':
             'middle'} " [style]="{'color': '#52545e', 'height': '50px', 'vertical-align': 'middle', 'font-size':'16px', 'padding-left':'18px'} ">
       </kendo-grid-column>
       <kendo-grid-column field="groupName" type="email " title="Group " width="175" [headerStyle]="{ 'font-size': '14px', 'color': '#131313', 'height': '52px', 'text-transform': 'uppercase', 'text-align': 'center',

@@ -21,7 +21,7 @@ export class GridComponent implements OnInit {
 
   ngOnInit() {
   }
-  onProductIdSearch(e) {
+  onItemIdSearch(e) {
   }
   public addHandler() {
   }
