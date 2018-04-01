@@ -1,0 +1,243 @@
+kendo-tabstrip kendo-tabstrip-tab {
+  background-color: #dbdbdb;
+  font-size: 500px;
+}
+
+.details {
+  font-size: 500px;
+}
+
+.k-textbox-container {
+  width: 28em;
+}
+
+.gg {
+  width: 75em;
+}
+
+p {
+  padding-left: 40px !important;
+  margin-top: 18px !important;
+  font-size: 24px;
+  color: #53545e;
+}
+
+
+.input_container {
+  margin-left: 40px;
+  margin-right: 42px;
+  margin-top: -3px;
+}
+
+.input_container1 {
+  margin-left: 40px;
+  margin-right: 42px;
+  margin-top: 30px;
+}
+
+.input_container2 {
+  margin-left: 40px;
+  margin-right: 42px;
+  margin-top: 30px;
+}
+.input_container3 {
+  margin-left: 40px;
+  margin-right: 42px;
+  margin-top: 30px;
+}
+.input_container4 {
+  margin-left: 40px;
+  margin-right: 42px;
+  margin-top: 30px;
+}
+hr {
+  width: 1321px;
+  margin-left: 40px;
+}
+
+.customModalBody{
+  padding:0;
+}
+ul.nav-tabs{
+  padding-bottom:30px;
+  border-bottom:none;
+}
+
+.nav-tabs>li.active>a{
+  border-top:5px solid #06409e;
+  color: #06409e;
+  font-family:Arial;
+  font-weight: bold;
+  font-size: 17px;
+  height:52px;
+  width: 146px;
+  margin-bottom:30px;
+  margin: 0 auto;
+  text-align:center;
+  box-sizing: border-box;
+  padding-top:10px;
+  border-radius:0px 2px 0px 0px;
+}
+
+.tabTitle {
+  font-family:Arial;
+  font-size: 17px;
+  height:52px;
+  width: 146px;
+  margin-bottom:30px;
+  margin: 0 auto;
+  text-align:center;
+  box-sizing: border-box;
+  padding-top:10px;
+  border-radius:0px 2px 0px 0px;
+}
+.formHeader{
+  font-family:'Arial';
+  font-size:24px;
+  color:#52545e;
+  padding-bottom:32px;
+  margin-bottom:40px;
+  border-bottom:1px solid #dbdbdb;
+  width:99.5%;
+}
+
+.formCol{
+  padding-right:35px;
+}
+
+.inputLabelContainer {
+  border: 1px solid #dbdbdb;
+  padding: 5px;
+  border-radius:3px;
+  background-color:#fff
+}
+
+.inputLabel {
+  font-family:Arial;
+  font-size: 14px;
+  color:#8d8d8d;
+}
+
+.editFormInput {
+  border: none;
+  width: 100%;
+  font-family: Arial;
+  font-size:20px;
+  color: #52545e;
+}
+input.editFormInput:focus {
+  outline:none;
+}
+
+.editFormRow {
+  margin-bottom: 50px;
+  padding-right:7px;
+}
+
+.cancelBtn{
+  font-family:Arial;
+  font-size:20px;
+  color:#131313;
+  margin-left:33px;
+  height:68px;
+  border:none;
+  position:relative;
+  float:left;
+  left:20px;
+  margin-top:0;
+  margin-bottom:0;
+}
+
+button.btn.btn-default.cancelBtn:hover{
+  background-color:transparent;
+}
+
+button.btn.btn-default.cancelBtn:active{
+  outline:none;
+}
+
+.closeBtn{
+  font-family:Arial;
+  font-size:20px;
+  font-weight:bold;
+  color:#fff;
+  background-color:#78C246;
+  padding-left:45px;
+  height:68px;
+  border-radius:0px;
+  width: 150px;
+  border:none;
+  text-align:left;
+  margin-top:0;
+  margin-bottom:0;
+
+}
+
+.customModalFooter{
+  padding:0;
+  padding-right:15px;
+}
+
+.radioHeader{
+  font-family:Arial;
+  font-weight: bold;
+  font-size:16px;
+  color: #52545e;
+  margin-right:25px;
+  position:relative;
+  float:left;
+  width:57%;
+  line-height:20px;
+}
+.radioHeader1{
+  font-family:Arial;
+  font-weight: bold;
+  font-size:18px;
+  color: #52545e;
+  margin-right:25px;
+  position:relative;
+  float:left;
+  width:auto;
+  line-height:20px;
+}
+
+.form-check{
+  position:relative;
+  float:left;
+  font-family:Arial;
+  font-size:18px;
+  color: #52545e;
+  font-weight:100;
+}
+
+label.form-check-label{
+  font-weight:normal;
+}
+
+input#radio121.form-check-input{
+  margin-left:20px;
+}
+
+form-check-label{
+  margin-left:12px;
+}
+
+.form-check-input{
+  height:20px;
+  width:20px;
+  background:none;
+}
+
+input[type="radio"] {
+  margin-top: -2px;
+  vertical-align: middle;
+}
+
+.col-lg-z {
+  width:21.66666667%;
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+  float:left;
+}
