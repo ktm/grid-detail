@@ -1,10 +1,12 @@
-<div id="myModal" class="modal fade" role="dialog" class="kdialog" *ngIf="active" (close)="closeForm()" class="frm" style="height:100%; position:absolute; z-index: 5; width: 100%; top: 0; background-color:rgba(255,255,255,0.7);">
+<div id="myModal" class="modal fade" role="dialog" class="kdialog" *ngIf="active"
+     (close)="closeForm()" class="frm"
+     style="height:100%; position:absolute; z-index: 5; width: 100%; top: 0; background-color:rgba(255,255,255,0.7);">
   <div class="modal-dialog" style="width:90%;">
     <!-- Modal content-->
     <div class="modal-content">
       <div class="modal-header" style="height:63px;">
         <button type="button" class="close" data-dismiss="modal" (click)="onCancel($event)">&times;</button>
-        <h4 class="modal-title">  {{isNew ? 'Add new user' : selectedUser.userName}}</h4>
+        <h4 class="modal-title">  {{'Add new user'}}</h4>
       </div>
       <div class="modal-body customModalBody">
         <ul class="nav nav-tabs">
@@ -27,24 +29,24 @@
             <div class="formHeader">General Information</div>
             <div class="detailContainer">
               <div class="row editFormRow">
-                <input type="hidden" name="Id" [(ngModel)]="selectedUser.id" />
-                <input type="hidden" name="tenantId" [(ngModel)]="selectedUser.tenantId" />
+                <input type="hidden" name="Id" />
+                <input type="hidden" name="tenantId" />
                 <div class="col-lg-4 col-md-4 col-sm-4 formCol">
                   <div class="inputLabelContainer">
                     <div class="inputLabel" id="identifier">First Name:</div>
-                    <input class="editFormInput" [(ngModel)]="selectedUser.firstName" />
+                    <input class="editFormInput"/>
                   </div>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-4 formCol">
                   <div class="inputLabelContainer">
                     <div class="inputLabel" id="name">Work#:</div>
-                    <input class="editFormInput" [(ngModel)]="selectedUser.workNumber" />
+                    <input class="editFormInput"/>
                   </div>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-4 formCol">
                   <div class="inputLabelContainer">
                     <div class="inputLabel">Address 1:</div>
-                    <input class="editFormInput" [(ngModel)]="selectedUser.address1" />
+                    <input class="editFormInput"  />
                   </div>
                 </div>
               </div>
@@ -52,19 +54,19 @@
                 <div class="col-lg-4 col-md-4 col-sm-4 formCol">
                   <div class="inputLabelContainer">
                     <div class="inputLabel">Last Name:</div>
-                    <input class="editFormInput" [(ngModel)]="selectedUser.lastName" />
+                    <input class="editFormInput"  />
                   </div>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-4 formCol">
                   <div class="inputLabelContainer">
                     <div class="inputLabel">Home#:</div>
-                    <input class="editFormInput" [(ngModel)]="selectedUser.homeNumber" />
+                    <input class="editFormInput"  />
                   </div>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-4 formCol">
                   <div class="inputLabelContainer">
                     <div class="inputLabel">Address 2:</div>
-                    <input class="editFormInput" [(ngModel)]="selectedUser.address2" />
+                    <input class="editFormInput"  />
                   </div>
                 </div>
               </div>
@@ -74,13 +76,13 @@
                 <div class="col-lg-4 col-md-4 col-sm-4 formCol">
                   <div class="inputLabelContainer">
                     <div class="inputLabel">Cell#:</div>
-                    <input class="editFormInput" [(ngModel)]="selectedUser.cellNumber" />
+                    <input class="editFormInput"  />
                   </div>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-4 formCol">
                   <div class="inputLabelContainer">
                     <div class="inputLabel">City:</div>
-                    <input class="editFormInput" [(ngModel)]="selectedUser.city" />
+                    <input class="editFormInput"  />
                   </div>
                 </div>
               </div>
@@ -92,7 +94,7 @@
                 <div class="col-lg-1 col-md-1 col-sm-1">
                   <div class="inputLabelContainer">
                     <div class="inputLabel">State:</div>
-                    <select class="editFormInput" id="state" name="state" [(ngModel)]="selectedUser.state">
+                    <select class="editFormInput" id="state" name="state" >
                       <option value="AL">AL</option>
                       <option value="AK">AK</option>
                       <option value="AR">AR</option>
@@ -150,7 +152,7 @@
                 <div class="col-lg-z formCol" style="margin-left:22px;">
                   <div class="inputLabelContainer">
                     <div class="inputLabel">Zip Code:</div>
-                    <input class="editFormInput" [(ngModel)]="selectedUser.zip" />
+                    <input class="editFormInput"  />
                   </div>
                 </div>
               </div>
@@ -161,24 +163,24 @@
             <div class="formHeader">Credentials</div>
             <div class="detailContainer">
               <div class="row editFormRow">
-                <input type="hidden" name="Id" [(ngModel)]="selectedUser.id" />
-                <input type="hidden" name="tenantId" [(ngModel)]="selectedUser.tenantId" />
+                <input type="hidden" name="Id"  />
+                <input type="hidden" name="tenantId"  />
                 <div class="col-lg-4 col-md-4 col-sm-4 formCol">
                   <div class="inputLabelContainer">
                     <div class="inputLabel" id="identifier">First Name:</div>
-                    <input class="editFormInput" [(ngModel)]="selectedUser.firstName" />
+                    <input class="editFormInput"  />
                   </div>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-4 formCol">
                   <div class="inputLabelContainer">
                     <div class="inputLabel" id="name">Work#:</div>
-                    <input class="editFormInput" [(ngModel)]="selectedUser.workNumber" />
+                    <input class="editFormInput"  />
                   </div>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-4 formCol">
                   <div class="inputLabelContainer">
                     <div class="inputLabel">Address 1:</div>
-                    <input class="editFormInput" [(ngModel)]="selectedUser.address1" />
+                    <input class="editFormInput"  />
                   </div>
                 </div>
               </div>
@@ -186,19 +188,19 @@
                 <div class="col-lg-4 col-md-4 col-sm-4 formCol">
                   <div class="inputLabelContainer">
                     <div class="inputLabel">Last Name:</div>
-                    <input class="editFormInput" [(ngModel)]="selectedUser.lastName" />
+                    <input class="editFormInput"  />
                   </div>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-4 formCol">
                   <div class="inputLabelContainer">
                     <div class="inputLabel">Home#:</div>
-                    <input class="editFormInput" [(ngModel)]="selectedUser.homeNumber" />
+                    <input class="editFormInput"  />
                   </div>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-4 formCol">
                   <div class="inputLabelContainer">
                     <div class="inputLabel">Address 2:</div>
-                    <input class="editFormInput" [(ngModel)]="selectedUser.address2" />
+                    <input class="editFormInput"  />
                   </div>
                 </div>
               </div>
@@ -208,13 +210,13 @@
                 <div class="col-lg-4 col-md-4 col-sm-4 formCol">
                   <div class="inputLabelContainer">
                     <div class="inputLabel">Cell#:</div>
-                    <input class="editFormInput" [(ngModel)]="selectedUser.cellNumber" />
+                    <input class="editFormInput"  />
                   </div>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-4 formCol">
                   <div class="inputLabelContainer">
                     <div class="inputLabel">City:</div>
-                    <input class="editFormInput" [(ngModel)]="selectedUser.city" />
+                    <input class="editFormInput"  />
                   </div>
                 </div>
               </div>
@@ -226,7 +228,7 @@
                 <div class="col-lg-1 col-md-1 col-sm-1">
                   <div class="inputLabelContainer">
                     <div class="inputLabel">State:</div>
-                    <select class="editFormInput" id="state" name="state" [(ngModel)]="selectedUser.state">
+                    <select class="editFormInput" id="state" name="state" >
                       <option value="AL">AL</option>
                       <option value="AK">AK</option>
                       <option value="AR">AR</option>
@@ -284,7 +286,7 @@
                 <div class="col-lg-z formCol" style="margin-left:22px;">
                   <div class="inputLabelContainer">
                     <div class="inputLabel">Zip Code:</div>
-                    <input class="editFormInput" [(ngModel)]="selectedUser.zip" />
+                    <input class="editFormInput"/>
                   </div>
                 </div>
               </div>
@@ -295,24 +297,24 @@
             <div class="formHeader">Roles</div>
             <div class="detailContainer">
               <div class="row editFormRow">
-                <input type="hidden" name="Id" [(ngModel)]="selectedUser.id" />
-                <input type="hidden" name="tenantId" [(ngModel)]="selectedUser.tenantId" />
+                <input type="hidden" name="Id"  />
+                <input type="hidden" name="tenantId"  />
                 <div class="col-lg-4 col-md-4 col-sm-4 formCol">
                   <div class="inputLabelContainer">
                     <div class="inputLabel" id="identifier">First Name:</div>
-                    <input class="editFormInput" [(ngModel)]="selectedUser.firstName" />
+                    <input class="editFormInput"  />
                   </div>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-4 formCol">
                   <div class="inputLabelContainer">
                     <div class="inputLabel" id="name">Work#:</div>
-                    <input class="editFormInput" [(ngModel)]="selectedUser.workNumber" />
+                    <input class="editFormInput"  />
                   </div>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-4 formCol">
                   <div class="inputLabelContainer">
                     <div class="inputLabel">Address 1:</div>
-                    <input class="editFormInput" [(ngModel)]="selectedUser.address1" />
+                    <input class="editFormInput"  />
                   </div>
                 </div>
               </div>
@@ -320,19 +322,19 @@
                 <div class="col-lg-4 col-md-4 col-sm-4 formCol">
                   <div class="inputLabelContainer">
                     <div class="inputLabel">Last Name:</div>
-                    <input class="editFormInput" [(ngModel)]="selectedUser.lastName" />
+                    <input class="editFormInput"  />
                   </div>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-4 formCol">
                   <div class="inputLabelContainer">
                     <div class="inputLabel">Home#:</div>
-                    <input class="editFormInput" [(ngModel)]="selectedUser.homeNumber" />
+                    <input class="editFormInput"  />
                   </div>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-4 formCol">
                   <div class="inputLabelContainer">
                     <div class="inputLabel">Address 2:</div>
-                    <input class="editFormInput" [(ngModel)]="selectedUser.address2" />
+                    <input class="editFormInput"  />
                   </div>
                 </div>
               </div>
@@ -342,13 +344,13 @@
                 <div class="col-lg-4 col-md-4 col-sm-4 formCol">
                   <div class="inputLabelContainer">
                     <div class="inputLabel">Cell#:</div>
-                    <input class="editFormInput" [(ngModel)]="selectedUser.cellNumber" />
+                    <input class="editFormInput"  />
                   </div>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-4 formCol">
                   <div class="inputLabelContainer">
                     <div class="inputLabel">City:</div>
-                    <input class="editFormInput" [(ngModel)]="selectedUser.city" />
+                    <input class="editFormInput"  />
                   </div>
                 </div>
               </div>
@@ -360,7 +362,7 @@
                 <div class="col-lg-1 col-md-1 col-sm-1">
                   <div class="inputLabelContainer">
                     <div class="inputLabel">State:</div>
-                    <select class="editFormInput" id="state" name="state" [(ngModel)]="selectedUser.state">
+                    <select class="editFormInput" id="state" name="state" >
                       <option value="AL">AL</option>
                       <option value="AK">AK</option>
                       <option value="AR">AR</option>
@@ -418,7 +420,7 @@
                 <div class="col-lg-z formCol" style="margin-left:22px;">
                   <div class="inputLabelContainer">
                     <div class="inputLabel">Zip Code:</div>
-                    <input class="editFormInput" [(ngModel)]="selectedUser.zip" />
+                    <input class="editFormInput"  />
                   </div>
                 </div>
               </div>
@@ -429,24 +431,24 @@
             <div class="formHeader">Notes</div>
             <div class="detailContainer">
               <div class="row editFormRow">
-                <input type="hidden" name="Id" [(ngModel)]="selectedUser.id" />
-                <input type="hidden" name="tenantId" [(ngModel)]="selectedUser.tenantId" />
+                <input type="hidden" name="Id"  />
+                <input type="hidden" name="tenantId"  />
                 <div class="col-lg-4 col-md-4 col-sm-4 formCol">
                   <div class="inputLabelContainer">
                     <div class="inputLabel" id="identifier">First Name:</div>
-                    <input class="editFormInput" [(ngModel)]="selectedUser.firstName" />
+                    <input class="editFormInput"  />
                   </div>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-4 formCol">
                   <div class="inputLabelContainer">
                     <div class="inputLabel" id="name">Work#:</div>
-                    <input class="editFormInput" [(ngModel)]="selectedUser.workNumber" />
+                    <input class="editFormInput"  />
                   </div>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-4 formCol">
                   <div class="inputLabelContainer">
                     <div class="inputLabel">Address 1:</div>
-                    <input class="editFormInput" [(ngModel)]="selectedUser.address1" />
+                    <input class="editFormInput"  />
                   </div>
                 </div>
               </div>
@@ -454,19 +456,19 @@
                 <div class="col-lg-4 col-md-4 col-sm-4 formCol">
                   <div class="inputLabelContainer">
                     <div class="inputLabel">Last Name:</div>
-                    <input class="editFormInput" [(ngModel)]="selectedUser.lastName" />
+                    <input class="editFormInput"  />
                   </div>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-4 formCol">
                   <div class="inputLabelContainer">
                     <div class="inputLabel">Home#:</div>
-                    <input class="editFormInput" [(ngModel)]="selectedUser.homeNumber" />
+                    <input class="editFormInput"  />
                   </div>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-4 formCol">
                   <div class="inputLabelContainer">
                     <div class="inputLabel">Address 2:</div>
-                    <input class="editFormInput" [(ngModel)]="selectedUser.address2" />
+                    <input class="editFormInput"  />
                   </div>
                 </div>
               </div>
@@ -476,13 +478,13 @@
                 <div class="col-lg-4 col-md-4 col-sm-4 formCol">
                   <div class="inputLabelContainer">
                     <div class="inputLabel">Cell#:</div>
-                    <input class="editFormInput" [(ngModel)]="selectedUser.cellNumber" />
+                    <input class="editFormInput"  />
                   </div>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-4 formCol">
                   <div class="inputLabelContainer">
                     <div class="inputLabel">City:</div>
-                    <input class="editFormInput" [(ngModel)]="selectedUser.city" />
+                    <input class="editFormInput"  />
                   </div>
                 </div>
               </div>
@@ -494,7 +496,7 @@
                 <div class="col-lg-1 col-md-1 col-sm-1">
                   <div class="inputLabelContainer">
                     <div class="inputLabel">State:</div>
-                    <select class="editFormInput" id="state" name="state" [(ngModel)]="selectedUser.state">
+                    <select class="editFormInput" id="state" name="state" >
                       <option value="AL">AL</option>
                       <option value="AK">AK</option>
                       <option value="AR">AR</option>
@@ -552,7 +554,7 @@
                 <div class="col-lg-z formCol" style="margin-left:22px;">
                   <div class="inputLabelContainer">
                     <div class="inputLabel">Zip Code:</div>
-                    <input class="editFormInput" [(ngModel)]="selectedUser.zip" />
+                    <input class="editFormInput"  />
                   </div>
                 </div>
               </div>

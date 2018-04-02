@@ -1,41 +1,35 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
-import { User } from '../../model/user';
 import { SortDescriptor, orderBy } from '@progress/kendo-data-query';
-import { UserService } from '../../service/user.service';
 import { ActivatedRoute, Router } from '@angular/router';
 
 
 @Component({
   selector: 'app-user-editor',
-  templateUrl: './user-editor.component.html',
-  styleUrls: ['./user-editor.component.scss']
+  templateUrl: './detail.component.html',
+  styleUrls: ['./detail.component.scss']
 })
-export class UserEditorComponent implements OnInit {
+export class DetailComponent implements OnInit {
   public active = false;
-  selectedUser: User;
-//  disallowLoadOrderWithIgnoreUser = false;
+  public selectedItem: any;
 
   @Input() public isNew = false;
 
   @Input()
-  public set model(user: User) {
-    if (user) {
-      console.log(user)
-      this.selectedUser = user;
-//      this.disallowLoadOrderWithIgnoreUser = this.selectedUser.disallowLoadOrderWithIgnoreUser;
-      this.active = user !== undefined;
+  public set model(model: any) {
+    if (model) {
+      console.log(model)
+      this.selectedItem = model;
+      this.active = model !== undefined;
     }
   }
 
   public onSave(e): void {
     e.preventDefault();
     if (this.isNew) {
+      // add
     } else {
-      this.service.updateUser(this.selectedUser)
-        .subscribe(user => {
-          this.closeForm();
-        });
+      // update
     }
   }
 
@@ -54,7 +48,6 @@ export class UserEditorComponent implements OnInit {
   }
 
   constructor(private route: ActivatedRoute,
-    private service: UserService,
     private router: Router
   ) { }
 
@@ -66,12 +59,9 @@ export class UserEditorComponent implements OnInit {
     const id = this.route.snapshot.paramMap.get('id');
     if (id) {
       if (id !== 'new') {
-        this.service.getUser(id)
-          .subscribe(user => {
-            this.model = user;
-          });
+        // fetch item
       } else {
-        this.model = new User();
+        this.model = {};
         this.isNew = true;
       }
     }
