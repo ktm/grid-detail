@@ -1,8 +1,6 @@
 @import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 $selected-bg: rgba(255,255,255,0.0);
 @import "~@progress/kendo-theme-bootstrap/scss/all";
-$fa-font-path: "../node_modules/font-awesome/fonts";
-@import "../node_modules/font-awesome/scss/font-awesome.scss";
 
 .grid_view {
   width: 100%;
