@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {products} from './products';
+import {NgbModal} from '@ng-bootstrap/ng-bootstrap';
+import {DetailComponent} from './detail/detail.component';
 
 const flatten = filter => {
   const filters = filter.filters;
@@ -17,7 +19,7 @@ const flatten = filter => {
 export class GridComponent implements OnInit {
   public gridData: any[] = products;
 
-  constructor() { }
+  constructor(private modalService: NgbModal) { }
 
   ngOnInit() {
   }
@@ -26,5 +28,12 @@ export class GridComponent implements OnInit {
   public addHandler() {
   }
   public editClick({sender, dataItem, rowIndex, isEdited}: any): void {
+    console.log('edit click' + dataItem);
+    this.open(dataItem);
+  }
+
+  open(arg: any) {
+    const modalRef = this.modalService.open(DetailComponent);
+    modalRef.componentInstance.itemId = arg.ProductId;
   }
 }

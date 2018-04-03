@@ -1,7 +1,7 @@
 export const products = [{
   'label': 'One',
   'productName': 'Chai',
-  'SupplierID': 1,
+  'ProductId': 1,
   'CategoryID': 1,
   'QuantityPerUnit': '10 boxes x 20 bags',
   'UnitPrice': 18.0000,
@@ -12,7 +12,7 @@ export const products = [{
 }, {
   'label': 'two',
   'productName': 'Chang',
-  'SupplierID': 1,
+  'ProductId': 1,
   'CategoryID': 1,
   'QuantityPerUnit': '24 - 12 oz bottles',
   'UnitPrice': 19.0000,
@@ -23,7 +23,7 @@ export const products = [{
 }, {
   'label': 'three',
   'productName': 'Aniseed Syrup',
-  'SupplierID': 1,
+  'ProductId': 1,
   'CategoryID': 2,
   'QuantityPerUnit': '12 - 550 ml bottles',
   'UnitPrice': 10.0000,
@@ -34,7 +34,7 @@ export const products = [{
 }, {
   'label': 'four',
   'productName': 'Chef Anton\'s Cajun Seasoning',
-  'SupplierID': 2,
+  'ProductId': 2,
   'CategoryID': 2,
   'QuantityPerUnit': '48 - 6 oz jars',
   'UnitPrice': 22.0000,
@@ -45,7 +45,7 @@ export const products = [{
 }, {
   'label': 'five',
   'productName': 'Chef Anton\'s Gumbo Mix',
-  'SupplierID': 2,
+  'ProductId': 2,
   'CategoryID': 2,
   'QuantityPerUnit': '36 boxes',
   'UnitPrice': 21.3500,
@@ -56,7 +56,7 @@ export const products = [{
 }, {
   'label': 'six',
   'productName': 'Grandma\'s Boysenberry Spread',
-  'SupplierID': 3,
+  'ProductId': 3,
   'CategoryID': 2,
   'QuantityPerUnit': '12 - 8 oz jars',
   'UnitPrice': 25.0000,
@@ -67,7 +67,7 @@ export const products = [{
 }, {
   'label': 'seven',
   'productName': 'Uncle Bob\'s Organic Dried Pears',
-  'SupplierID': 3,
+  'ProductId': 3,
   'CategoryID': 7,
   'QuantityPerUnit': '12 - 1 lb pkgs.',
   'UnitPrice': 30.0000,
@@ -78,7 +78,7 @@ export const products = [{
 }, {
   'label': 'eight',
   'productName': 'Northwoods Cranberry Sauce',
-  'SupplierID': 3,
+  'ProductId': 3,
   'CategoryID': 2,
   'QuantityPerUnit': '12 - 12 oz jars',
   'UnitPrice': 40.0000,
@@ -89,7 +89,7 @@ export const products = [{
 }, {
   'label': 'nine',
   'productName': 'Mishi Kobe Niku',
-  'SupplierID': 4,
+  'ProductId': 4,
   'CategoryID': 6,
   'QuantityPerUnit': '18 - 500 g pkgs.',
   'UnitPrice': 97.0000,
@@ -100,7 +100,7 @@ export const products = [{
 }, {
   'label': 'ten',
   'productName': 'Ikura',
-  'SupplierID': 4,
+  'ProductId': 4,
   'CategoryID': 8,
   'QuantityPerUnit': '12 - 200 ml jars',
   'UnitPrice': 31.0000,
@@ -111,7 +111,7 @@ export const products = [{
 }, {
   'label': 'eleven',
   'productName': 'Queso Cabrales',
-  'SupplierID': 5,
+  'ProductId': 5,
   'CategoryID': 4,
   'QuantityPerUnit': '1 kg pkg.',
   'UnitPrice': 21.0000,
@@ -122,7 +122,7 @@ export const products = [{
 }, {
   'label': 'twelve',
   'productName': 'Queso Manchego La Pastora',
-  'SupplierID': 5,
+  'ProductId': 5,
   'CategoryID': 4,
   'QuantityPerUnit': '10 - 500 g pkgs.',
   'UnitPrice': 38.0000,
@@ -133,7 +133,7 @@ export const products = [{
 }, {
   'label': 'thirteen',
   'productName': 'Konbu',
-  'SupplierID': 6,
+  'ProductId': 6,
   'CategoryID': 8,
   'QuantityPerUnit': '2 kg box',
   'UnitPrice': 6.0000,
@@ -144,7 +144,7 @@ export const products = [{
 }, {
   'label': 'fourteen',
   'productName': 'Tofu',
-  'SupplierID': 6,
+  'ProductId': 6,
   'CategoryID': 7,
   'QuantityPerUnit': '40 - 100 g pkgs.',
   'UnitPrice': 23.2500,
@@ -155,7 +155,7 @@ export const products = [{
 }, {
   'label': 'fifteen',
   'productName': 'Genen Shouyu',
-  'SupplierID': 6,
+  'ProductId': 6,
   'CategoryID': 2,
   'QuantityPerUnit': '24 - 250 ml bottles',
   'UnitPrice': 15.5000,
@@ -166,7 +166,7 @@ export const products = [{
 }, {
   'label': 'sixteen',
   'productName': 'Pavlova',
-  'SupplierID': 7,
+  'ProductId': 7,
   'CategoryID': 3,
   'QuantityPerUnit': '32 - 500 g boxes',
   'UnitPrice': 17.4500,
@@ -177,7 +177,7 @@ export const products = [{
 }, {
   'label': 'seventeen',
   'productName': 'Alice Mutton',
-  'SupplierID': 7,
+  'ProductId': 7,
   'CategoryID': 6,
   'QuantityPerUnit': '20 - 1 kg tins',
   'UnitPrice': 39.0000,
@@ -188,7 +188,7 @@ export const products = [{
 }, {
   'label': 'eighteen',
   'productName': 'Carnarvon Tigers',
-  'SupplierID': 7,
+  'ProductId': 7,
   'CategoryID': 8,
   'QuantityPerUnit': '16 kg pkg.',
   'UnitPrice': 62.5000,
@@ -199,7 +199,7 @@ export const products = [{
 }, {
   'label': 'nineteen',
   'productName': 'Teatime Chocolate Biscuits',
-  'SupplierID': 8,
+  'ProductId': 8,
   'CategoryID': 3,
   'QuantityPerUnit': '10 boxes x 12 pieces',
   'UnitPrice': 9.2000,
@@ -210,7 +210,7 @@ export const products = [{
 }, {
   'label': 'twenty',
   'productName': 'Sir Rodney\'s Marmalade',
-  'SupplierID': 8,
+  'ProductId': 8,
   'CategoryID': 3,
   'QuantityPerUnit': '30 gift boxes',
   'UnitPrice': 81.0000,
@@ -221,7 +221,7 @@ export const products = [{
 }, {
   'label': 'twenty-one',
   'productName': 'Sir Rodney\'s Scones',
-  'SupplierID': 8,
+  'ProductId': 8,
   'CategoryID': 3,
   'QuantityPerUnit': '24 pkgs. x 4 pieces',
   'UnitPrice': 10.0000,
@@ -232,7 +232,7 @@ export const products = [{
 }, {
   'label': 'twenty-two',
   'productName': 'Gustaf\'s Knäckebröd',
-  'SupplierID': 9,
+  'ProductId': 9,
   'CategoryID': 5,
   'QuantityPerUnit': '24 - 500 g pkgs.',
   'UnitPrice': 21.0000,
@@ -243,7 +243,7 @@ export const products = [{
 }, {
   'label': 'twenty-three',
   'productName': 'Tunnbröd',
-  'SupplierID': 9,
+  'ProductId': 9,
   'CategoryID': 5,
   'QuantityPerUnit': '12 - 250 g pkgs.',
   'UnitPrice': 9.0000,
@@ -254,7 +254,7 @@ export const products = [{
 }, {
   'label': 'twenty-four',
   'productName': 'Guaraná Fantástica',
-  'SupplierID': 10,
+  'ProductId': 10,
   'CategoryID': 1,
   'QuantityPerUnit': '12 - 355 ml cans',
   'UnitPrice': 4.5000,
@@ -265,7 +265,7 @@ export const products = [{
 }, {
   'label': 'twenty-five',
   'productName': 'NuNuCa Nuß-Nougat-Creme',
-  'SupplierID': 11,
+  'ProductId': 11,
   'CategoryID': 3,
   'QuantityPerUnit': '20 - 450 g glasses',
   'UnitPrice': 14.0000,
@@ -276,7 +276,7 @@ export const products = [{
 }, {
   'label': 'twenty-six',
   'productName': 'Gumbär Gummibärchen',
-  'SupplierID': 11,
+  'ProductId': 11,
   'CategoryID': 3,
   'QuantityPerUnit': '100 - 250 g bags',
   'UnitPrice': 31.2300,

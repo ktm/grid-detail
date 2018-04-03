@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import {NgbActiveModal, NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 
 import { AppComponent } from './app.component';
@@ -19,8 +20,9 @@ import {GridModule} from '@progress/kendo-angular-grid';
     BrowserModule,
     AppRoutingModule,
     GridModule,
+    NgbModule.forRoot(),
   ],
-  providers: [],
+  providers: [NgbActiveModal],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
