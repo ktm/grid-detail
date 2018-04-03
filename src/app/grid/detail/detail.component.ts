@@ -11,4 +11,9 @@ export class DetailComponent {
 
   public model: any;
   constructor(public activeModal: NgbActiveModal) {}
+
+  public onSave() {
+    console.log('SAVE!!!');
+    this.activeModal.close();
+  }
 }
